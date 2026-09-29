@@ -4,7 +4,6 @@ const router = express.Router();
 
 let students = require("../data/student");
 
-//get students
 router.get("/", (req, res) => {
   res.status(200).json(students);
 });
